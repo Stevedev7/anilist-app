@@ -1,0 +1,18 @@
+a.nav-link{
+    text-decoration: none;
+    color: #7c8a98;
+    transition: color 100ms 50ms linear;
+    font-weight: 800;
+    padding: 20px;
+}
+
+a.nav-link:hover{
+    color: #9fadbd;
+}
+
+
+@media screen and (max-width: 768px) {
+    a.nav-link{
+        color: blue;
+    }
+}
