@@ -8,7 +8,7 @@ export const useAuth = () => {
         
         localStorage.setItem('accessToken', accessToken);
         localStorage.setItem('tokenType', tokenType);
-        localStorage.setItem('expiresIn', expiresIn);
+        localStorage.setItem('expiresIn', ((Number(expiresIn) * 1000) + Date.now()));
     
         window.location.replace(window.location.origin + '/home');
     }, []);

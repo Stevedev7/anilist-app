@@ -10,14 +10,16 @@ a.nav-link:hover{
     color: #9fadbd;
 }
 
+a.navbar-branding{
+    transform-origin: center;
+}
+
 a > .navbar-branding:hover{
-    height: 49px;
-    width: 49px;
+    transform: scale(98%);
 }
 
 a > .navbar-branding:active{
-    height: 47px;
-    width: 47px;
+    transform: scale(96%);
 }
 
 @media screen and (max-width: 768px) {
