@@ -17,7 +17,9 @@ import avatar from '../../assets/img/avatar.png';
 const LoggedInNav = () => (
     <StyledNav>
         <DivWrap>
-            <StyledBranding src={branding} />
+            <Link to='/'>
+                <StyledBranding src={branding} />
+            </Link>
             <StyledUl>
                 <StyledLi>
                     <Link className="nav-link" to="/home">Home</Link>
@@ -46,7 +48,9 @@ const LoggedInNav = () => (
 const LoggedOutNav = () => (
     <StyledNav>
         <DivWrap>
-            <StyledBranding src={branding} />
+            <Link to='/'>
+                <StyledBranding className="navbar-branding" src={branding} />
+            </Link>
             <StyledUl>
                 <StyledLi>
                     <Link className="nav-link" to="/home">Browse</Link>
@@ -59,9 +63,13 @@ const LoggedOutNav = () => (
         </DivWrap>
     </StyledNav>
 )
-const loggedIn = true;
+const loggedIn = false;
+
 const Navbar = () => {
-        const Nav = loggedIn? <LoggedInNav /> : <LoggedOutNav />
+        const Nav = loggedIn 
+            ? <LoggedInNav /> 
+            : <LoggedOutNav />
+
         return Nav;
 }
 

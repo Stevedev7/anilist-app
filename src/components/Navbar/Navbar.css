@@ -10,6 +10,15 @@ a.nav-link:hover{
     color: #9fadbd;
 }
 
+a > .navbar-branding:hover{
+    height: 49px;
+    width: 49px;
+}
+
+a > .navbar-branding:active{
+    height: 47px;
+    width: 47px;
+}
 
 @media screen and (max-width: 768px) {
     a.nav-link{

@@ -1,0 +1,12 @@
+.login-btn:hover {
+    color: #11161d;
+    background: linear-gradient(to left bottom, #00aaffe1, #fefefee1);
+    transform: translateY(2px);
+    box-shadow: 0 0 7px #9fadbd;
+}
+
+.login-btn:active{
+    transform: translateY(3px);
+    background: linear-gradient(to left bottom, #00aaff, #fefefe);
+    box-shadow: none;
+}
