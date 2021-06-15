@@ -36,7 +36,7 @@ const App = () => {
                     <Switch>
                         <Route exact path="/">
                             {
-                                error
+                                !error
                                     ? <Redirect to="/home" />
                                     : <Landing/>
                             }
@@ -44,7 +44,7 @@ const App = () => {
 
                         <Route path="/home">
                             {
-                                error=== null
+                                error
                                     ? <Redirect to="/" />
                                     : <Home/>
                             }
